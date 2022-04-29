@@ -41,7 +41,7 @@ public class View {
 
     /**
      * vista inicial de la aplicacion, es el menu principal, a partir del cual se
-     * accede a las otras opciones
+     * accede a las otras funcionalidades de la aplicacion
      *
      * @param alc alcancia que se esta usando
      */
@@ -76,6 +76,7 @@ public class View {
                 }
             } else {
                 System.out.println("Opcion No Valida, por favor ingrese otra opcion");
+                init(alcancia);
             }
         } catch (IOException e) {
             e.printStackTrace();

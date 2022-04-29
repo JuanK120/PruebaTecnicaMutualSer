@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"com.Alcancia","l":"Alcancia"},{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"com.Alcancia","l":"Main"},{"p":"com.Alcancia","l":"View"}];updateSearchResults();
