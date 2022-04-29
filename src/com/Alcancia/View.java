@@ -55,8 +55,8 @@ public class View {
             System.out.println("Opcion No Valida, por favor ingrese otra opcion");
             init(alcancia);
         }
-        alcancia = null;
         System.out.println("Hasta Luego");
+        System.exit(0);
 
     }
 
