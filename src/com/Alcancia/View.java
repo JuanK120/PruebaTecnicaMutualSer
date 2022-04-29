@@ -28,7 +28,7 @@ public class View {
                         "3 para saber la cantidad de monedas de cierta denominacion \n" +
                         "4 para saber la cantidada de dinero en monedas de cierta denominacion \n" +
                         "5 para salir \n" +
-                        "por favor ingrese una opcion :");
+                        "Por favor ingrese una opcion :");
                 entrada = Integer.parseInt(reader.readLine());
                 if ((entrada>=0) && (entrada<6)){
                     switch (entrada){
@@ -70,7 +70,7 @@ public class View {
                         "2 para agregar un monedas de 200 \n" +
                         "3 para agregar un monedas de 500 \n" +
                         "4 para agregar un monedas de 1000 \n" +
-                        "por favor ingrese una opcion :");
+                        "Por favor ingrese una opcion :");
                 entrada = Integer.parseInt(reader.readLine());
                 if ((entrada>=0) && (entrada<5)){
                     tipoMoneda=entrada;
@@ -116,7 +116,7 @@ public class View {
                         "2 para consultar monedas de 200 \n" +
                         "3 para consultar monedas de 500 \n" +
                         "4 para consultar monedas de 1000 \n" +
-                        "por favor ingrese una opcion :");
+                        "Por favor ingrese una opcion :");
                 entrada = Integer.parseInt(reader.readLine());
                 if ((entrada>=0) && (entrada<5)){
                     cantidadMonedasTipo=alcancia.getCantidadMonedatipo(entrada);
@@ -144,7 +144,7 @@ public class View {
                         "2 para consultar monedas de 200 \n" +
                         "3 para consultar monedas de 500 \n" +
                         "4 para consultar monedas de 1000 \n" +
-                        "por favor ingrese una opcion :");
+                        "Por favor ingrese una opcion :");
                 entrada = Integer.parseInt(reader.readLine());
                 if ((entrada>=0) && (entrada<5)){
                     cantidadDineroTipo=alcancia.getCantidadDineroMoneda(entrada);
@@ -165,10 +165,10 @@ public class View {
     private void comprobarSigue(int menu){
         int entrada;
         try {
-            System.out.print("desea seguir aqui? \n" +
+            System.out.print("Desea seguir aqui? \n" +
                     "0 para si\n" +
                     "1 para no \n" +
-                    "por favor ingrese una opcion :");
+                    "Por favor ingrese una opcion :");
             entrada = Integer.parseInt(reader.readLine());
             if (entrada == 0) {
                 switch (menu) {
@@ -187,7 +187,7 @@ public class View {
             } else if (entrada == 1) {
                 init(alcancia);
             } else {
-                System.out.print("opcion no valida, ingrese otra opcion\n");
+                System.out.print("Opcion no valida, ingrese otra opcion\n");
             }
         } catch (IOException e) {
             e.printStackTrace();
