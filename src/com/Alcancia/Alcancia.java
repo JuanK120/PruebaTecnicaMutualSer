@@ -17,16 +17,16 @@ public class Alcancia {
                 monedas[0] = monedas[0]+1;
                 return true;
             case 1:
-                monedas[1] = monedas[0]+1;
+                monedas[1] = monedas[1]+1;
                 return true;
             case 2:
-                monedas[2] = monedas[0]+1;
+                monedas[2] = monedas[2]+1;
                 return true;
             case 3:
-                monedas[3] = monedas[0]+1;
+                monedas[3] = monedas[3]+1;
                 return true;
             case 4:
-                monedas[4] = monedas[0]+1;
+                monedas[4] = monedas[4]+1;
                 return true;
         }
 

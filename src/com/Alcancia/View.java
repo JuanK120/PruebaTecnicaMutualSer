@@ -55,6 +55,7 @@ public class View {
             System.out.println("Opcion No Valida, por favor ingrese otra opcion");
             init(alcancia);
         }
+        alcancia = null;
         System.out.println("Hasta Luego");
 
     }
@@ -79,13 +80,15 @@ public class View {
                         alcancia.addMonedas(tipoMoneda);
                     }
                     comprobarSigue(0);
+                }else {
+                    System.out.println("Opcion No Valida, por favor ingrese otra opcion");
                 }
             }
         } catch (IOException e) {
             e.printStackTrace();
         } catch (NumberFormatException e){
             System.out.println("Opcion No Valida, por favor ingrese otra opcion");
-            init(alcancia);
+            agregarMonedas();
         }
     }
 
@@ -99,7 +102,7 @@ public class View {
     private void cantidadDineroGeneral(){
         int cantidadDinero;
         cantidadDinero=alcancia.getCantidadDineroTotal();
-        System.out.print("Hay "+cantidadDinero+" monedas en la alcancia \n");
+        System.out.print("Hay $"+cantidadDinero+" en la alcancia \n");
         comprobarSigue(2);
     }
 
@@ -119,13 +122,15 @@ public class View {
                     cantidadMonedasTipo=alcancia.getCantidadMonedatipo(entrada);
                     System.out.print("hay "+cantidadMonedasTipo+" monedas\n");
                     comprobarSigue(3);
+                }else {
+                    System.out.println("Opcion No Valida, por favor ingrese otra opcion");
                 }
             }
         } catch (IOException e) {
             e.printStackTrace();
         } catch (NumberFormatException e){
             System.out.println("Opcion No Valida, por favor ingrese otra opcion");
-            init(alcancia);
+            cantidadMonedasTipo();
         }
     }
 
@@ -143,15 +148,17 @@ public class View {
                 entrada = Integer.parseInt(reader.readLine());
                 if ((entrada>=0) && (entrada<5)){
                     cantidadDineroTipo=alcancia.getCantidadDineroMoneda(entrada);
-                    System.out.print("hay "+cantidadDineroTipo+" monedas\n");
+                    System.out.print("hay $"+cantidadDineroTipo+"\n");
                     comprobarSigue(4);
+                }else {
+                    System.out.println("Opcion No Valida, por favor ingrese otra opcion");
                 }
             }
         } catch (IOException e) {
             e.printStackTrace();
         } catch (NumberFormatException e){
             System.out.println("Opcion No Valida, por favor ingrese otra opcion");
-            init(alcancia);
+            cantidadDineroTipo();
         }
     }
 
@@ -186,7 +193,7 @@ public class View {
             e.printStackTrace();
         } catch (NumberFormatException e){
             System.out.println("Opcion No Valida, por favor ingrese otra opcion");
-            init(alcancia);
+            comprobarSigue(menu);
         }
 
     }
